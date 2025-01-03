@@ -1,6 +1,6 @@
-# C Notes 
+# Unit 1 : Problem Solving, Algorithms, and Flowcharts
 
-## Unit 1 : Problem Solving, Algorithms, and Flowcharts
+## About C
 C is a high-level, general-purpose programming language that was developed by Dennis Ritchie in the early 1970s at Bell Labs. It is widely known for its efficiency and control over system resources, making it suitable for system programming, embedded systems, and applications requiring high performance.
 
 C provides features like low-level memory manipulation, a rich set of operators, and straightforward syntax, which has influenced many modern programming languages like C++, Java, and Python. It allows direct access to hardware, making it ideal for writing operating systems, compilers, and other system software. C also supports structured programming, using functions and blocks of code to improve readability and maintainability.
