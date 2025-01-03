@@ -18,13 +18,17 @@ Value: The actual data stored in the variable (e.g., 5, 3.14).
 
 Example:
 
-``` int age = 20; ```  'int' is the type, 'age' is the name, and 20 is the value
+```c
+int age = 20;
+```
+
+ 'int' is the type, 'age' is the name, and 20 is the value
 
 In this example, age is a variable that stores an integer (20).
 
 
 
-```
+```c
 #include <stdio h>
 #include <conio.h>
 void main(){
