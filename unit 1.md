@@ -7,7 +7,7 @@ C provides features like low-level memory manipulation, a rich set of operators,
 
 ## Variables in C 
 
-In C, variables are used to store data that can be used and manipulated in a program. Each variable has a name, a type, and a value.
+A variable is a user-defined or a user-readable custom name assigned to a memory location. Variables hold a value that can be modified and reused many times during the program execution.
 
 Name: The label you give the variable (e.g., age, score).
 
