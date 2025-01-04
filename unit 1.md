@@ -60,6 +60,11 @@ void main() {
 }
 
 ```
+Algorithms provide a logical structure to solve problems.
+
+These steps are implemented using constructs like loops, decision-making statements, and functions.
+
+Writing efficient algorithms ensures better performance and readability of code.
 
 
 ## Variables 
