@@ -66,7 +66,57 @@ These steps are implemented using constructs like loops, decision-making stateme
 
 Writing efficient algorithms ensures better performance and readability of code.
 
+## Pseudocode 
 
+Pseudocode is a simplified, high-level description of a program or algorithm that uses plain language and some programming constructs.
+
+Pseudocode is often used for planning and explaining algorithms before implementing them.
+
+### Key Features of Pseudocode
+
+1. Written in plain English with programming logic.
+2. Easy to understand for developers and non-developers.
+3. Follows the logic of programming constructs like loops, conditionals, and functions.
+
+Pseudocode:
+ ```
+START 
+INPUT num1, num2, num3
+IF num1 > num2 AND num1 > num3 THEN
+    largest = num1
+ELSE IF num2 > num3 THEN
+    largest = num2
+ELSE
+    largest = num3
+END IF
+PRINT "Largest number is", largest
+STOP
+```
+
+Equivalent C Code:
+```c
+#include <stdio.h>
+#include <conio.h>
+
+void main() {
+    int num1, num2, num3, largest;
+
+    printf("Enter three numbers: ");
+    scanf("%d %d %d", &num1, &num2, &num3);
+
+    if (num1 > num2 && num1 > num3) {
+        largest = num1;
+    } else if (num2 > num3) {
+        largest = num2;
+    } else {
+        largest = num3;
+    }
+
+    printf("Largest number is %d\n", largest);
+
+    getch();
+}
+```
 ## Variables 
 
 A variable is a user-defined or a user-readable custom name assigned to a memory location. Variables hold a value that can be modified and reused many times during the program execution.
