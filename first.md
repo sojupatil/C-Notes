@@ -1,150 +1,99 @@
-# Unit 1 : Problem Solving, Algorithms, and Flowcharts
+# What is C?
+C is a general-purpose programming language created by Dennis Ritchie at the Bell Laboratories in 1972.
 
-## About C
-C is a high-level, general-purpose programming language that was developed by Dennis Ritchie in the early 1970s at Bell Labs. It is widely known for its efficiency and control over system resources, making it suitable for system programming, embedded systems, and applications requiring high performance.
+It is a very popular language, despite being old. The main reason for its popularity is because it is a fundamental language in the field of computer science.
 
-C provides features like low-level memory manipulation, a rich set of operators, and straightforward syntax, which has influenced many modern programming languages like C++, Java, and Python. It allows direct access to hardware, making it ideal for writing operating systems, compilers, and other system software. C also supports structured programming, using functions and blocks of code to improve readability and maintainability.
+C is strongly associated with UNIX, as it was developed to write the UNIX operating system.
 
-## Algorithm 
-An algorithm is a step-by-step procedure or a set of rules to solve a specific problem or perform a task. It serves as a blueprint for implementing solutions.
-
-### Example : Algorithm to Find the Largest of Three Numbers
-
-Algorithm:
-
-1. Start.
-
-
-2. Input three numbers: a, b, c.
-
-
-3. Compare:
-
-If a > b and a > c, then a is the largest.
-
-Else if b > c, then b is the largest.
-
-Otherwise, c is the largest.
-
-
-
-4. Print the largest number.
-
-
-5. Stop.
+# C Syntax
+*The syntax of the C programming language is the set of rules governing writing of software in C.Syntax is Structure of program*
 
 ```c
 #include <stdio.h>
 #include <conio.h>
 
 void main() {
-    int a, b, c, largest;
-    
-    // Input three numbers
-    printf("Enter three numbers: ");
-    scanf("%d %d %d", &a, &b, &c);
-
-    // Compare to find the largest
-    if (a > b && a > c) {
-        largest = a;
-    } else if (b > c) {
-        largest = b;
-    } else {
-        largest = c;
-    }
-
-    // Print the largest number
-    printf("The largest number is: %d\n", largest);
-
-    getch();
+  printf("Hello World!");
+  getch();
 }
 
 ```
-Algorithms provide a logical structure to solve problems.
+Line 1: ```#include <stdio.h>``` is a header file library that lets us work with input and output functions, such as printf() (used in line 4). Header files add functionality to C programs.
 
-These steps are implemented using constructs like loops, decision-making statements, and functions.
+Line 2: ```#include <conio.h>``` header file is a compiler-specific file that provides functions for console input and output, screen handling, and text-based interface development.
 
-Writing efficient algorithms ensures better performance and readability of code.
+Line 3: ```main()``` This is called a function. Any code inside its curly brackets {} will be executed.
 
-## Pseudocode 
+Line 4: ```printf()``` is a function used to output/print text to the screen. In our example, it will output "Hello World!".
 
-Pseudocode is a simplified, high-level description of a program or algorithm that uses plain language and some programming constructs.
+Line 5: ```getch();``` is a function that reads a single character from the keyboard input. It is part of the **conio.h** library, which is used for console input and output operations. The getch(); function:
+Waits for the user to press a key on the keyboard.
+Does not echo the pressed key to the screen, meaning the input is not displayed.
 
-Pseudocode is often used for planning and explaining algorithms before implementing them.
+# Statements 
+A computer program is a list of "instructions" to be "executed" by a computer.
 
-### Key Features of Pseudocode
+In a programming language, these programming instructions are called statements.
 
-1. Written in plain English with programming logic.
-2. Easy to understand for developers and non-developers.
-3. Follows the logic of programming constructs like loops, conditionals, and functions.
-
-Pseudocode:
- ```
-START 
-INPUT num1, num2, num3
-IF num1 > num2 AND num1 > num3 THEN
-    largest = num1
-ELSE IF num2 > num3 THEN
-    largest = num2
-ELSE
-    largest = num3
-END IF
-PRINT "Largest number is", largest
-STOP
+The following statement "instructs" the compiler to print the text "Hello World" to the screen.
+```c
+printf("Hello World!");
 ```
+It is important to end the statement with a semicolon ; , **;** is also called as Statement Terminator.
 
-Equivalent C Code:
+# printf Function ~ Output (Print Text)
+printf is the function used to print text or output values.
+If we want to print text it must he wrapped inside double quotation marks 
+`""`.
+We can you as many print function as we want.
+```c
+printf("Hello World 🌎");
+```
+# New Lines 
+\n is an escape sequence that represents a newline character. When used in a string, it causes the output to move to the next line. 
+
+Example Code:
+
 ```c
 #include <stdio.h>
 #include <conio.h>
 
 void main() {
-    int num1, num2, num3, largest;
-
-    printf("Enter three numbers: ");
-    scanf("%d %d %d", &num1, &num2, &num3);
-
-    if (num1 > num2 && num1 > num3) {
-        largest = num1;
-    } else if (num2 > num3) {
-        largest = num2;
-    } else {
-        largest = num3;
-    }
-
-    printf("Largest number is %d\n", largest);
-
+    printf("Hello, World!\n");
+    printf("This is on a new line.");
     getch();
 }
 ```
-## Variables 
-
-A variable is a user-defined or a user-readable custom name assigned to a memory location. Variables hold a value that can be modified and reused many times during the program execution.
-
-Name: The label you give the variable (e.g., age, score).
-
-Type: Specifies what kind of data the variable will hold (e.g., int for integers, float for decimal numbers).
-
-Value: The actual data stored in the variable (e.g., 5, 3.14).
-
-
-Example:
+Output:
 
 ```c
-int age = 20;
+Hello, World!
+This is on a new line.
 ```
 
- 'int' is the type, 'age' is the name, and 20 is the value
+# C Comments 
+Comments can be used to explain code, and to make it more readable. It can also be used to prevent execution when testing alternative code.
 
-In this example, age is a variable that stores an integer (20).
+Comments can be singled-lined or multi-lined.
+Single-line comments start with two forward slashes (//).
 
+Any text between // and the end of the line is ignored by the compiler (will not be executed).
 
+This example uses a single-line comment before a line of code:
 
 ```c
-#include <stdio h>
-#include <conio.h>
-void main(){
-printf("Hello World");
-getch();
- }
+// This is a comment
+printf("Hello World!");
 ```
+# C Multi-line Comments
+
+Multi-line comments start with /* and ends with */.
+Any text between /* and */ will be ignored by the compiler:
+
+Example
+```c
+/* The code below will print the words Hello World!
+to the screen, and it is amazing */
+printf("Hello World!");
+```
+
